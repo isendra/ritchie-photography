@@ -114,6 +114,12 @@
         margin-left: 1rem;
       }
     }
+
+    .nav-link.disabled {
+      opacity: 0.5;
+      /* Adjust the opacity value as needed */
+      pointer-events: none;
+    }
   </style>
 
   <link href="product.css" rel="stylesheet">
@@ -219,13 +225,13 @@
         <div class="offcanvas-body" style="padding-top: 0px;">
           <ul class="navbar-nav flex-grow-1 justify-content-between">
             <li class="nav-item show-home"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item margin-on-large"><a class="nav-link" href="#">Portfolio</a></li>
+            <li class="nav-item margin-on-large"><a class="nav-link disabled" href="#">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Tuition</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Studio Hire</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#">Tuition</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#">Studio Hire</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">
+            <li class="nav-item"><a class="nav-link disabled" href="#">
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#cart" />
                 </svg>
@@ -242,7 +248,7 @@
         <h1 class="display-5 fw-bold">Ritchie Photography</h1>
       </div>
     </div>
-<!-- SIZE HERE !!! TO HIDE ELEMENT FIX THE RECTANLGE REEEE-->
+    <!-- SIZE HERE !!! TO HIDE ELEMENT FIX THE RECTANLGE REEEE-->
     <div id="myCarousel" class="carousel slide mb-6 d-none d-xxl-block" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
